@@ -83,6 +83,9 @@ html,
 body {
   font-size: 18px;
 }
+body{
+  height: 10000px;
+}
 .wrapper {
   background-color: $color-f1f1f1;
   width: 100%;
@@ -91,10 +94,9 @@ body {
   height: 100vh;
   position: relative;
 }
-.center{
+.center {
   @include positionCenter;
   width: 55%;
-  
 }
 .text-rtl {
   direction: rtl !important;
@@ -190,6 +192,8 @@ li {
       text-align: left;
       font-weight: bold;
       line-height: 1.5;
+      white-space: normal;
+      word-break: break-all;
       // < & > & "
       .token,
       .equal,
@@ -246,6 +250,8 @@ li {
       text-align: left;
       font-weight: bold;
       line-height: 1.5;
+      white-space: normal;
+      word-break: break-all;
       // * & body & element
       .element {
         color: #7ec699;
@@ -282,6 +288,7 @@ li {
     padding: 40px 20px 0px 20px;
     direction: ltr;
     background: #2d2d2d;
+    @include borderRadius(10px);
     &::before {
       content: "JAVASCRIPT";
       position: absolute;
@@ -302,6 +309,8 @@ li {
       text-align: left;
       font-weight: bold;
       line-height: 1.5;
+      white-space: normal;
+      word-break: break-all;
       // comment
       .comment {
         color: #999;
@@ -315,33 +324,57 @@ li {
       .document,
       .token,
       .innerHTML {
-        color: #ffeb3b;
+        color: #e2777a;
       }
       .getElement {
       }
       .element {
         color: #7ec699;
       }
-      .string {
+      .string,
+      .function,
+      .css-code-value,
+      .close-tag {
         color: #e2777a;
+      }
+      .icon-jquery,
+      .ready,
+      .use-strict,
+      .css-code-name {
+        color: #7ec699;
       }
     }
   }
 }
 
-.disc-code-text{
+.disc-code-text {
   background-color: $color-fff;
   padding: 20px;
   @include borderRadius(10px);
 }
 
-.main-header{
+.main-header {
   background-color: $color-fff;
   margin-bottom: 30px;
   padding: 20px;
   @include borderRadius(10px);
-  .h2{
+  .h2 {
     padding: 0;
     margin: 0;
   }
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+.ml-50 {
+  margin-left: 50px;
+}
+.ml-60 {
+  margin-left: 60px;
 }

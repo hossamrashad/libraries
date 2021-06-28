@@ -7704,6 +7704,10 @@ body {
   font-size: 18px;
 }
 
+body {
+  height: 10000px;
+}
+
 .wrapper {
   background-color: #f1f1f1;
   width: 100%;
@@ -7827,6 +7831,8 @@ li {
   text-align: left;
   font-weight: bold;
   line-height: 1.5;
+  white-space: normal;
+  word-break: break-all;
 }
 
 .parent-disc-code pre.pre-language-html code.code-language-html .token,
@@ -7885,6 +7891,8 @@ li {
   text-align: left;
   font-weight: bold;
   line-height: 1.5;
+  white-space: normal;
+  word-break: break-all;
 }
 
 .parent-disc-code pre.pre-language-css code.code-language-css .element {
@@ -7921,6 +7929,11 @@ li {
   padding: 40px 20px 0px 20px;
   direction: ltr;
   background: #2d2d2d;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .parent-disc-code pre.pre-language-javascript::before {
@@ -7944,6 +7957,8 @@ li {
   text-align: left;
   font-weight: bold;
   line-height: 1.5;
+  white-space: normal;
+  word-break: break-all;
 }
 
 .parent-disc-code pre.pre-language-javascript code.code-language-javascript .comment {
@@ -7961,15 +7976,25 @@ li {
 .parent-disc-code pre.pre-language-javascript code.code-language-javascript .document,
 .parent-disc-code pre.pre-language-javascript code.code-language-javascript .token,
 .parent-disc-code pre.pre-language-javascript code.code-language-javascript .innerHTML {
-  color: #ffeb3b;
+  color: #e2777a;
 }
 
 .parent-disc-code pre.pre-language-javascript code.code-language-javascript .element {
   color: #7ec699;
 }
 
-.parent-disc-code pre.pre-language-javascript code.code-language-javascript .string {
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .string,
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .function,
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .css-code-value,
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .close-tag {
   color: #e2777a;
+}
+
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .icon-jquery,
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .ready,
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .use-strict,
+.parent-disc-code pre.pre-language-javascript code.code-language-javascript .css-code-name {
+  color: #7ec699;
 }
 
 .disc-code-text {
@@ -7996,5 +8021,25 @@ li {
 .main-header .h2 {
   padding: 0;
   margin: 0;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.ml-60 {
+  margin-left: 60px;
 }
 /*# sourceMappingURL=framework.css.map */
