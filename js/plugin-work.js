@@ -140,7 +140,7 @@ $(document).ready(function () {
   });
 
   // gmaps
-  var map = new GMaps({ el: ".jq-map", lat: 30.039977, lng: 31.219695 });
+  // var map = new GMaps({ el: ".jq-map", lat: 30.039977, lng: 31.219695 });
 
   // FitText
   $(".jq-fittext").fitText(1.2, { minFontSize: "20px", maxFontSize: "30px" });
@@ -176,12 +176,12 @@ $(document).ready(function () {
   });
 
   // mixitup
-  var mixer = mixitup(".portfolio-item", {
-    animation: {
-      duration: 300,
-      effectsOut: "fade translateX(-100%)",
-    },
-  });
+  // var mixer = mixitup(".portfolio-item", {
+  //   animation: {
+  //     duration: 300,
+  //     effectsOut: "fade translateX(-100%)",
+  //   },
+  // });
 
   // countTo
   $(".jq-countTo").countTo({
