@@ -246,12 +246,12 @@ function readmore() {
 }
 
 // navbar change color
-window.addEventListener("scroll", function () {
-  var windowH = $(window).height();
-  var nav = this.document.querySelector("nav");
-  var windowPosition = this.window.scrollY > windowH;
-  nav.classList.toggle('css-nav-change-color', windowPosition);
-});
+// window.addEventListener("scroll", function () {
+//   var windowH = $(window).height();
+//   var nav = this.document.querySelector("nav");
+//   var windowPosition = this.window.scrollY > windowH;
+//   nav.classList.toggle('css-nav-change-color', windowPosition);
+// });
 
 /* input direction */
 $(function () {

@@ -192,22 +192,22 @@ $(document).ready(function () {
   });
 
   // typed js
-$(function () {
-  "use strict";
+// $(function () {
+//   "use strict";
 
-  var typed = new Typed(".jq-typed-text", {
-    // Waits 1000ms after typing "First"
-    strings: ["rovan.", " Hossam ", "Rashad"],
-    typeSpeed: 100,
-    startDelay:5000,
-    backDelay: 1000,
-    loop: true,
-    // loopCount:3, == Number of loop
-    loopCount: false,
-    cursorChar: '<i class="fas fa-angle-left"></i>',
-    showCursor: true,
-  });
-});
+//   var typed = new Typed(".jq-typed-text", {
+//     // Waits 1000ms after typing "First"
+//     strings: ["rovan.", " Hossam ", "Rashad"],
+//     typeSpeed: 100,
+//     startDelay:5000,
+//     backDelay: 1000,
+//     loop: true,
+//     // loopCount:3, == Number of loop
+//     loopCount: false,
+//     cursorChar: '<i class="fas fa-angle-left"></i>',
+//     showCursor: true,
+//   });
+// });
 
 // mousewheel owl-carousel
 $(".owl-carousel").on("mousewheel", ".owl-stage", function (e) {
